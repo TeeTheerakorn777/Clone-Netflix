@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(images/header-image.jpg);
+    padding: 10px 10%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* outline: 1px solid red; */
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+    /* cursor: pointer;    img สามารถกดได้ */
+}
+
+nav button {
+    border: 0;
+    background: #db0001;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.eng {
+    background: transparent;
+    /* โปร่งใส */
+    border: 1px solid rgb(153, 153, 153);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.eng {
+    width: 100px;
+}
+
+nav button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.box {
+    /* outline: 1px solid red; */
+    height: 550px;
+    position: relative;
+}
+
+.box-text {
+    /* outline: 2px solid gold; */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 40%;
+    font-size: 30px;
+}
+
+.box-text p {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.box-email {
+    width: 50%;
+    /* outline: 2px solid red; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.email input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 20px 30px;
+    outline: 0;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+}
+
+.email button {
+    background: #db0001;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 0 4px 4px 0;
+}
+
+.email button:hover {
+    opacity: 0.8;
+}
+
+.box-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 8%;
+    border-bottom: 8px solid #222;
+}
+
+.box1-text {
+    color: #fff;
+    max-width: 100%;
+    /* outline: 2px solid gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.box1-text p {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.box1-img {
+    max-width: 100%;
+}
+
+.box1-img img {
+    display: block;
+    width: 600px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 8% 5%;
+    border-bottom: 8px solid #222;
+    margin-top: 5%;
+}
+
+.box2-img {
+    max-width: 100%;
+}
+
+.box2-text {
+    color: #fff;
+    max-width: 100%;
+    /* outline: 2px solid gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    width: 80%;
+}
+
+.box2-text h1 {
+    width: 500px;
+}
+
+.box2-text p {
+    margin-top: 1rem;
+}
+
+.box2-img img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 40px;
+    color: #c7c7c7;
+    padding: 20px 8% 100px;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #c7c7c7;
+}
+
+.footer ul {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.btn-eng {
+    padding: 10px 35px;
+    background: transparent;
+    /* โปร่งใส */
+    border: 1px solid rgb(153, 153, 153);
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.box-4 {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 8px solid #222;
+}
+
+.box-4 h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+
+.footer p {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:820px) {
+    body {
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .box-text {
+        top: 100px;
+        font-size: 18px;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .box-email {
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box {
+        height: 420px;
+    }
+
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1-text {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .box-2 {
+        display: grid;
+        grid-template-areas:
+            'h1 h1'
+            'img img'
+    }
+
+    .box2-text {
+        align-items: center;
+        font-size: 18px;
+        grid-area: h1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .box2-img {
+        grid-area: img;
+    }
+
+}
+
+@media only screen and (max-width:428px) {
+    body {
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    button.eng {
+        width: 70px;
+        text-align: center;
+    }
+
+    button.eng a {
+        font-size: 1rem;
+    }
+
+
+
+    .box-text {
+        top: 50px;
+        font-size: 18px;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .box-email {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box {
+        height: 420px;
+    }
+
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1-img {
+        width: 400px;
+    }
+
+    .box1-img img {
+        width: 100%;
+        display: flex;
+    }
+
+    .box1-text {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .box-2 {
+        display: grid;
+        grid-template-areas:
+            'h1 h1'
+            'img img'
+    }
+
+    .box2-text {
+        font-size: .4rem;
+        grid-area: h1;
+        width: 350px;
+        margin-right: 2rem;
+    }
+
+    .box2-text h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .box2-text p {
+        font-size: 0.8rem;
+    }
+
+    .box2-img {
+        grid-area: img;
+    }
+
+
+}
